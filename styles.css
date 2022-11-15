@@ -120,7 +120,7 @@
       }
       .what{
         text-align: right;
-        color: red; 
+        margin-right: -150px; 
       }
       .projects-h2{
         max-width: 300px;
