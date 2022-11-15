@@ -51,7 +51,7 @@
     }
 
     .link-p{
-      filter: drop-shadow(10px 5px 2px rgba(0,0,0,0.125));
+      filter: drop-shadow(10px 5px 2px rgba(0,0,0,0.25));
     }
     
     #welcome-section{
@@ -120,7 +120,7 @@
       }
       .what{
         text-align: right;
-        margin-right: -80px;  
+        margin-right: -70px;  
       }
       .projects-h2{
         max-width: 300px;
