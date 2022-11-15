@@ -119,7 +119,8 @@
         margin-right: 20px;
       }
       .what{
-        text-align: left;
+        text-align: right;
+        margin-right: -100px; 
       }
       .projects-h2{
         max-width: 300px;
