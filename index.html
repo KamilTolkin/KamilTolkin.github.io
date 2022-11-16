@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
   <body>
-    <nav id="navbar">
-      <ul class="navbar-ul">
-        <li><a href="#welcome-section" Class="navlink"><p class="link-p">About</p></a></li>
-        <li><a href="#projects" Class="navlink"><p class="link-p">Projects</p></a></li>
-        <li><a href="#contact" Class="navlink"><p class="link-p">Contact</p></a></li>
+    <header>
+      <div id="name">Kamil Tolkin</div>
+      <nav id="navbar-desktop">
+        <ul class="navbar-ul">
+          <li><a href="#welcome-section" Class="navlink">About</a></li>
+          <li><a href="#projects" Class="navlink">Projects</a></li>
+          <li><a href="#contact" Class="navlink">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)"> 
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="#welcome-section" Class="navlink">About</a></li>
+        <li><a href="#projects" Class="navlink">Projects</a></li>
+        <li><a href="#contact" Class="navlink">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+    </header>
     <section id="welcome-section">
       <h1>Hi! I'm Kamil</h1>
       <p class="what">I'm learning to code.</p>
@@ -42,5 +55,6 @@
     <a id="email-link" href="mailto:kamtolkin@gmail.com" target="_blank"><i class="fas fa-at"></i>Email</a>
     </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 :root{
     --main-green: #6e9075;
     --main-pink: #BFADA3;
@@ -10,50 +12,61 @@
     * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
     
     body{
       font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 1.4;
         background-color: var(--main-black)
     }
-    
-    
-    .project-tile{
-      width:50%
-    }
-    #navbar{
-      position: fixed;
-      background-color: var(--main-green);
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
-      z-index: 10;
-      
-    }
-    .navbar-ul{
-      list-style-type: none;
-        display: flex;
-      flex-direction: row;
-     justify-content: right;
-    }
-    
-    li{
-      padding: 10px 20px;
-    }
-    
-    .navlink{
-      color: white;
+
+    header a{
       text-decoration: none;
     }
 
-    .link-p{
+    header{
+      padding: 0 20px;
+      background-color: var(--main-green);
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+
+    #name{
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      color: white;
       filter: drop-shadow(10px 5px 5px rgba(0,0,0,0.25));
     }
-    
+
+    ul{
+      list-style: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    ul a{
+      color: white;
+      filter: drop-shadow(10px 5px 5px rgba(0,0,0,0.25));
+    }
+
+    ul li{
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    ul li:hover{
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+
     #welcome-section{
       display: flex;
       flex-direction: column;
@@ -89,6 +102,7 @@
       padding: 20px 10px;
       margin-top: -20px;
       text-decoration: none;
+      width:50%
     }
     
     .project-image{
@@ -114,11 +128,53 @@
       padding: 50 20;
       text-decoration: none;
     }
+
+    #hamburger-icon{
+      margin: auto 0;
+      display: none;
+      cursor: pointer;
+    }
+
+    #hamburger-icon div{
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .open .bar1{
+      -webkit-transform: rotate(-45deg) translate(-6px,6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    .open .bar2{
+      opacity: 0;
+    }
+
+    .open .bar3{
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px,-8px);
+    }
+
+    .open .mobile-menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .mobile-menu{
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: 110px;
+      width: 100%;
+      background-color: #526c57;
+    }
     
-    @media only screen and (max-width: 480px){
-      .navbar-ul{
-        font-size: 75%;
-      }
+    @media only screen and (max-width: 600px){
       h1{
         text-align: right;
         margin-right: 20px;
@@ -137,5 +193,12 @@
 
       .contacts-links{
         text-align: center;
+      }
+      header nav {
+        display: none;
+      }
+
+      #hamburger-icon{
+        display: block;
       }
     }
