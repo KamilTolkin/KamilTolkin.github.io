@@ -105,14 +105,12 @@ ul li:hover {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .project-tile {
-  padding: 20px 10px;
   margin-top: -20px;
   text-decoration: none;
-  width: 50%;
 }
 
 .project-image {
@@ -129,14 +127,25 @@ ul li:hover {
 }
 
 .contacts-header {
-  padding: 70px;
+  padding-bottom: 50px;
+}
+
+.contacts-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contacts-links > a {
   color: white;
   font-size: 30px;
-  padding: 50 20;
+  padding: 0 20px;
   text-decoration: none;
+}
+
+i{
+  padding-right: 5px;
 }
 
 #hamburger-icon {
